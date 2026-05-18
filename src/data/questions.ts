@@ -180,5 +180,57 @@ export const questions: Question[] = [
       { id: 'q18a3', text: '与朋友和家人相聚', stageId: 3 },
       { id: 'q18a4', text: '学习提升自己，追求进步', stageId: 4 }
     ]
+  },
+  {
+    id: 'q19',
+    text: '你如何看待自己的情绪？',
+    answers: [
+      { id: 'q19a1', text: '情绪是需要控制的麻烦', stageId: 1 },
+      { id: 'q19a2', text: '情绪是了解自己的窗口', stageId: 2 },
+      { id: 'q19a3', text: '情绪会影响人际关系', stageId: 3 },
+      { id: 'q19a4', text: '情绪可以被管理和利用', stageId: 4 }
+    ]
+  },
+  {
+    id: 'q20',
+    text: '你对灵性成长的态度是？',
+    answers: [
+      { id: 'q20a1', text: '不太理解，也不感兴趣', stageId: 1 },
+      { id: 'q20a2', text: '开始好奇，想了解更多', stageId: 5 },
+      { id: 'q20a3', text: '是重要的人生课题', stageId: 6 },
+      { id: 'q20a4', text: '是生命的本质和目的', stageId: 7 }
+    ]
+  },
+  {
+    id: 'q21',
+    text: '当你帮助他人时，你的感受是？',
+    answers: [
+      { id: 'q21a1', text: '希望得到回报', stageId: 1 },
+      { id: 'q21a2', text: '感觉良好', stageId: 2 },
+      { id: 'q21a3', text: '是社会责任', stageId: 3 },
+      { id: 'q21a4', text: '是生命的自然表达', stageId: 7 }
+    ]
   }
 ];
+
+export const questionStats = {
+  totalQuestions: 21,
+  stageDistribution: [
+    { stage: 1, count: 15, percentage: 28.6 },
+    { stage: 2, count: 8, percentage: 15.2 },
+    { stage: 3, count: 7, percentage: 13.3 },
+    { stage: 4, count: 8, percentage: 15.2 },
+    { stage: 5, count: 8, percentage: 15.2 },
+    { stage: 6, count: 7, percentage: 13.3 },
+    { stage: 7, count: 7, percentage: 13.3 }
+  ],
+  dimensions: [
+    { name: '生存安全', questions: ['q1', 'q2', 'q4', 'q6', 'q7', 'q9', 'q13', 'q15'] },
+    { name: '自我探索', questions: ['q1', 'q2', 'q4', 'q6', 'q13', 'q15', 'q17', 'q18', 'q19'] },
+    { name: '社会关系', questions: ['q1', 'q2', 'q4', 'q6', 'q7', 'q10', 'q11', 'q15', 'q18'] },
+    { name: '成就目标', questions: ['q1', 'q2', 'q4', 'q6', 'q7', 'q9', 'q10', 'q11', 'q13', 'q15'] },
+    { name: '意义寻求', questions: ['q3', 'q5', 'q7', 'q8', 'q9', 'q10', 'q12', 'q14', 'q16', 'q17', 'q20'] },
+    { name: '服务贡献', questions: ['q3', 'q5', 'q8', 'q9', 'q12', 'q13', 'q14', 'q15', 'q16', 'q21'] },
+    { name: '灵性觉醒', questions: ['q3', 'q5', 'q8', 'q11', 'q12', 'q14', 'q17', 'q20', 'q21'] }
+  ]
+};
